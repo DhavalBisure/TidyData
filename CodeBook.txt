@@ -1,0 +1,137 @@
+ 
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+
+For each record it is provided:
+======================================
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+======================================
+-The dataset contains the mean value of each feature for each subject performaing a particular activity
+
+Variable Names
+
+ [1] "activity"  : Contains activity names like WALKING
+, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS
+, SITTING, STANDING
+, LAYING
+                                                      
+ [2] "subject"   : In the range on 1-30      
+                                                
+   
+ [3] "TimeDomain_BodyAccelerometer_Mean_X"                                 
+ [4] "TimeDomain_BodyAccelerometer_Mean_Y"                                 
+ [5] "TimeDomain_BodyAccelerometer_Mean_Z"    
+                             
+ [6] "TimeDomain_BodyAccelerometer_StandardDeviation_X"                    
+ [7] "TimeDomain_BodyAccelerometer_StandardDeviation_Y"                    
+ [8] "TimeDomain_BodyAccelerometer_StandardDeviation_Z"      
+              
+ [9] "TimeDomain_GravityAccelerometer_Mean_X"                              
+[10] "TimeDomain_GravityAccelerometer_Mean_Y"                              
+[11] "TimeDomain_GravityAccelerometer_Mean_Z"    
+                          
+[12] "TimeDomain_GravityAccelerometer_StandardDeviation_X"                 
+[13] "TimeDomain_GravityAccelerometer_StandardDeviation_Y"                 
+[14] "TimeDomain_GravityAccelerometer_StandardDeviation_Z"  
+               
+[15] "TimeDomain_BodyAccelerometerJerk_Mean_X"                             
+[16] "TimeDomain_BodyAccelerometerJerk_Mean_Y"                             
+[17] "TimeDomain_BodyAccelerometerJerk_Mean_Z"          
+                   
+[18] "TimeDomain_BodyAccelerometerJerk_StandardDeviation_X"                
+[19] "TimeDomain_BodyAccelerometerJerk_StandardDeviation_Y"                
+[20] "TimeDomain_BodyAccelerometerJerk_StandardDeviation_Z"      
+          
+[21] "TimeDomain_BodyGyroscope_Mean_X"                                     
+[22] "TimeDomain_BodyGyroscope_Mean_Y"                                     
+[23] "TimeDomain_BodyGyroscope_Mean_Z"             
+                        
+[24] "TimeDomain_BodyGyroscope_StandardDeviation_X"                        
+[25] "TimeDomain_BodyGyroscope_StandardDeviation_Y"                        
+[26] "TimeDomain_BodyGyroscope_StandardDeviation_Z"   
+                     
+[27] "TimeDomain_BodyGyroscopeJerk_Mean_X"                                 
+[28] "TimeDomain_BodyGyroscopeJerk_Mean_Y"                                 
+[29] "TimeDomain_BodyGyroscopeJerk_Mean_Z"            
+                     
+[30] "TimeDomain_BodyGyroscopeJerk_StandardDeviation_X"                    
+[31] "TimeDomain_BodyGyroscopeJerk_StandardDeviation_Y"                    
+[32] "TimeDomain_BodyGyroscopeJerk_StandardDeviation_Z"    
+                
+[33] "TimeDomain_BodyAccelerometerMagnitude_Mean"                          
+[34] "TimeDomain_BodyAccelerometerMagnitude_StandardDeviation"  
+           
+[35] "TimeDomain_GravityAccelerometerMagnitude_Mean"                       
+[36] "TimeDomain_GravityAccelerometerMagnitude_StandardDeviation" 
+         
+[37] "TimeDomain_BodyAccelerometerJerkMagnitude_Mean"                      
+[38] "TimeDomain_BodyAccelerometerJerkMagnitude_StandardDeviation" 
+        
+[39] "TimeDomain_BodyGyroscopeMagnitude_Mean"                              
+[40] "TimeDomain_BodyGyroscopeMagnitude_StandardDeviation"       
+          
+[41] "TimeDomain_BodyGyroscopeJerkMagnitude_Mean"                          
+[42] "TimeDomain_BodyGyroscopeJerkMagnitude_StandardDeviation"     
+        
+[43] "FrequencyDomain_BodyAccelerometer_Mean_X"                            
+[44] "FrequencyDomain_BodyAccelerometer_Mean_Y"                            
+[45] "FrequencyDomain_BodyAccelerometer_Mean_Z"              
+              
+[46] "FrequencyDomain_BodyAccelerometer_StandardDeviation_X"               
+[47] "FrequencyDomain_BodyAccelerometer_StandardDeviation_Y"               
+[48] "FrequencyDomain_BodyAccelerometer_StandardDeviation_Z"   
+            
+[49] "FrequencyDomain_BodyAccelerometer_MeanFreq_X"                        
+[50] "FrequencyDomain_BodyAccelerometer_MeanFreq_Y"                        
+[51] "FrequencyDomain_BodyAccelerometer_MeanFreq_Z"        
+                
+[52] "FrequencyDomain_BodyAccelerometerJerk_Mean_X"                        
+[53] "FrequencyDomain_BodyAccelerometerJerk_Mean_Y"                        
+[54] "FrequencyDomain_BodyAccelerometerJerk_Mean_Z"       
+                 
+[55] "FrequencyDomain_BodyAccelerometerJerk_StandardDeviation_X"           
+[56] "FrequencyDomain_BodyAccelerometerJerk_StandardDeviation_Y"           
+[57] "FrequencyDomain_BodyAccelerometerJerk_StandardDeviation_Z"  
+         
+[58] "FrequencyDomain_BodyAccelerometerJerk_MeanFreq_X"                    
+[59] "FrequencyDomain_BodyAccelerometerJerk_MeanFreq_Y"                    
+[60] "FrequencyDomain_BodyAccelerometerJerk_MeanFreq_Z"   
+                 
+[61] "FrequencyDomain_BodyGyroscope_Mean_X"                                
+[62] "FrequencyDomain_BodyGyroscope_Mean_Y"                                
+[63] "FrequencyDomain_BodyGyroscope_Mean_Z"           
+                     
+[64] "FrequencyDomain_BodyGyroscope_StandardDeviation_X"                   
+[65] "FrequencyDomain_BodyGyroscope_StandardDeviation_Y"                   
+[66] "FrequencyDomain_BodyGyroscope_StandardDeviation_Z" 
+                  
+[67] "FrequencyDomain_BodyGyroscope_MeanFreq_X"                            
+[68] "FrequencyDomain_BodyGyroscope_MeanFreq_Y"                            
+[69] "FrequencyDomain_BodyGyroscope_MeanFreq_Z"         
+                   
+[70] "FrequencyDomain_BodyAccelerometerMagnitude_Mean"                     
+[71] "FrequencyDomain_BodyAccelerometerMagnitude_StandardDeviation"   
+[72] "FrequencyDomain_BodyAccelerometerMagnitude_Mean_Frequency"  
+         
+[73] "FrequencyDomain_BodyBodyAccelerometerJerkMagnitude_Mean"             
+[74] "FrequencyDomain_BodyBodyAccelerometerJerkMagnitude_StandardDeviation"
+[75] "FrequencyDomain_BodyBodyAccelerometerJerkMagnitude_Mean_Frequency"
+   
+[76] "FrequencyDomain_BodyBodyGyroscopeMagnitude_Mean"                     
+[77] "FrequencyDomain_BodyBodyGyroscopeMagnitude_StandardDeviation"        
+[78] "FrequencyDomain_BodyBodyGyroscopeMagnitude_Mean_Frequency"     
+      
+[79] "FrequencyDomain_BodyBodyGyroscopeJerkMagnitude_Mean"                 
+[80] "FrequencyDomain_BodyBodyGyroscopeJerkMagnitude_StandardDeviation"    
+[81] "FrequencyDomain_BodyBodyGyroscopeJerkMagnitude_Mean_Frequency"
+
+- Features are normalized and bounded within [-1,1].
+- Body acceleration is in standard units of 'g'
+- Body gyroscope is in 'radians/second'
